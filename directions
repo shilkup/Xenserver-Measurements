@@ -1,0 +1,29 @@
+Place the following files in the Physical Machines:
+    1) net.sh (ONLY use the file provided by us)
+    2) xenstat-1.pl (ONLY use the file provided by us)
+    3) vmstat (this application should already be install in the PM)
+    4) top (this application should already be install in the PM)
+    5) mpstat (this application should already be install in the PM)
+
+Place the following files in the Virtual Machines:
+    1) vmstat (this application should already be install in the PM)
+    2) top (this application should already be install in the PM)
+    
+Place the following files in the machince, which you will use to run the parallel-1.0.sh file:
+    1) paralleltest-1.0.sh (ONLY use the file provided by us)
+    2) refinedata-1.0.sh (ONLY use the file provided by us)
+    
+How to run:
+
+    bash paralleltest-1.0.sh <number of time you want to run this experiment>
+    i.e. bash paralleltest-1.0.sh 5
+
+    NOTE: the instruction to run the refinedata-1.0.sh is placed inside paralleltest-1.0.sh file.
+          you can run it manually if any error occurs while running the parallel test.
+    Here is how you run refinedata-1.0.sh
+
+        bash refinedata-1.0.sh <number of time you ran the experiment with paralleltest-1.0.sh file> <prefix of the folder>
+        i.e. bash refinedata-1.0.sh 5 140709213705
+        
+        NOTE: folder prefix contains date and time of the folder's creation or the time we executed paralleltest-1.0.sh script
+            : this is an example of a folder name: 140709213705testResults0
